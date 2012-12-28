@@ -1,0 +1,56 @@
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+@font-face {
+	font-family: 'junctionregularRegular';
+	src: url('Junction-webfont.eot');
+	src: local('☺'), url('Junction-webfont.woff') format('woff'), url('Junction-webfont.ttf') format('truetype'), url('Junction-webfont.svg#webfont6Zm9BOS8') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#container { width: 700px; margin-left: auto; margin-right: auto; position:relative; z-index:999; }
+
+#top { position:absolute; z-index:0; top:140px; left:0; height:583px; padding-bottom:160px; background:#d11327; border-bottom:10px solid #fff200; }
+
+body { padding:0;margin:0; }
+
+h2, h3, h4, h5, p { font-family: "Helvetica Nueue", helvetica, arial, sans-serif; line-height:1.4em; }
+h2 { font-size:70px; }
+h4 { font-size:24px; }
+h3 { font-size:22px; font-weight:normal; }
+h5 { font-size:12px; }
+p { font-size:16px; margin-bottom:2em; }
+
+h1 { font: 140px/115px 'junctionregularRegular', Arial, sans-serif; letter-spacing: -5px; }
+h1.beirut, .date h1, .wrap { position:relative; z-index:999; }
+h1.beirut { background:#fff200; height:140px; font-size:150px; text-align:center; }
+h1.beirut span { position:relative; top:87px; color:#ec008c; }
+
+.wrap { padding:30px 200px; position:relative; }
+
+.date { height:693px; }
+.date h1 { color:#fff200; position:absolute; bottom:23px; }
+
+.details { background:#ea6fa8; }
+.details h4 { margin:10px 0 45px 0; }
+
+.speakers { background:#fff200; }
+.speakers h2, .music h2 { font-size:28px; margin-bottom:1em; }
+
+.music { background:#fff200; border-top:10px solid #ea6fa8; }
+.music h3 { margin-bottom:1.5em; }
+
