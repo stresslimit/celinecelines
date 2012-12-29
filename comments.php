@@ -19,7 +19,6 @@
               <div class="item" id="comments"></div>
               <?php foreach ($comments as $comment) : ?>
                 <div class="item" id="comment-<?php comment_ID() ?>">
-                  <div class="main">
                     <span class="date"><a href="<?php the_permalink(); ?>#comment-<?php comment_ID() ?>"><?php comment_date('j M Y, g:ia') ?></a></span> by
                     <?php if ($comment->comment_author_url) : ?>
 	                    <span class="fn"><a class="url" href="<?php comment_author_url(); ?>"><?php comment_author() ?></a></span><br/>
@@ -30,13 +29,11 @@
                     <div class="comment<?php if ($comment->user_id == $post->post_author) { echo ' highlight'; }; ?>">
                       <?php comment_text() ?>
                     </div>
-                  </div>
                 </div>
               <?php endforeach; ?>
             <?php endif; ?>
             <div class="item">
               <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="respond">
-                <div class="main">
                   <?php if ( $user_ID ) : ?>
                     logged in as<br/>
                     <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a><br/>
@@ -58,7 +55,6 @@
                   <input name="submit" type="submit" id="submit" tabindex="5" value="Submit" /><br/>
                   <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
                   <?php do_action('comment_form', $post->ID); ?>
-                </div>
               </form>
             </div>
           <?php endif; ?>

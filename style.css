@@ -1,6 +1,6 @@
 /*
-Theme Name: celinecelines
-Author: colin
+Theme Name: Celine Celines v.2
+Author: celine & colin
 */
 
 /*
@@ -19,36 +19,37 @@ ol, ul { list-style:none; }
 
 /* typography */
 body { font-family:'OsloRegular', arial, sans-serif; font-size:16px; line-height:1.8; color:#231f20; }
-h1, h2, h3, .menu { font-family:'prociono', serif; text-transform:uppercase; line-height:1.2; padding:10px 0; }
-h1, h1 a, h2, h2 a, h3, h3 a, .menu a { color:#231f20; }
+h1, h2, h3, h4, .menu { font-family:'prociono', serif; text-transform:uppercase; line-height:1.2; padding-bottom:10px; }
+h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, .menu a { color:#231f20; }
 .menu a:hover { color:#f77a6a; }
 h1 { font-size:18px }
 h2 { font-size:16px; margin:0; }
 h3 { font-size:14px; margin:0; }
+h4 { font-size:16px; text-transform:none; }
 h5 { margin-bottom:40px; color:#f77a6a; } /* date & author */
 p { padding-bottom:0.8em; }
 b, strong { font-family:'OsloBold'; }
 em, i { font-weight:normal; font-family:'OsloItalic', arial, sans-serif; }
 a { color:#f77a6a; text-decoration:none; }
 a:hover { background-color:#f77a6a; color:#fff; }
-
+.page-title { font-size:18px; text-transform:none; margin-bottom:0.5em; }
 
 /* layout */
-.contain { margin:0 auto; width:1001px; }
-section.body { margin-top:40px; }
+header > div, section > div, .contain { margin:0 auto; max-width:1001px; }
+section { margin:2em 0; border-bottom:2px solid #f77a6a; }
+section.body { border:0; }
 section.whois { width:205px; }
-.main, .article_wrapper article { margin-left:280px; }
-footer { border-top:2px solid #f77a6a; margin-top:40px; margin-bottom:100px; }
+article, .page-title { margin-left:280px; max-width:600px; }
 
 
 /* header & menu */
 header { border-bottom:2px solid #f77a6a; /*padding:10px 0;*/ }
-header h1 a { display:block; text-indent:-9999em; width:188px; height:188px; background:url('images/celinecelines-newhome.png') 0 0 no-repeat; }
+header h1 a, header h1 a:hover { display:block; text-indent:-9999em; width:188px; height:188px; background:url('images/celinecelines-newhome.png') 0 0 no-repeat; }
 header h1, header .menu, header .searchForm { float:left; }
-.menu {  font-size:14px; margin:172px 0 0 120px; }
+.menu { font-size:14px; margin:172px 0 0 120px; padding:10px 0; }
 .menu li { float:left; margin-right:50px; }
 .menu li a { padding-bottom:10px; font-family:'prociono', serif; height:30px; }
-.menu li a:hover { border-bottom:15px solid #f77a6a; color:#f77a6a; background:transparent; }
+.menu li a:hover, .menu li.current-menu-item a { border-bottom:15px solid #f77a6a; color:#f77a6a; background:transparent; }
 
 #whois { width:205px; float:left; position:relative; top:-25px; }
 #whois h3, #whois div { background:#faf5c0; }
@@ -58,12 +59,22 @@ header h1, header .menu, header .searchForm { float:left; }
 
 
 /* content */
-.main { width:600px; }
-.main p img { width:600px !important; height:auto !important; }
-.main p img.small, .main p img.original { width:auto !important; height:auto !important; }
-.main ul { padding-bottom:0.5em; }
-.main li { list-style:square; line-height:1.4; }
-.main li p { padding-bottom:0; }
+article p img { max-width:600px !important; height:auto !important; }
+article p img.small, .main p img.original { width:auto !important; height:auto !important; }
+article ul { padding-bottom:0.5em; }
+article li { list-style:square; line-height:1.4; }
+article li p { padding-bottom:0; }
+
+blockquote, .comment { background-color:#efefef; color:#666; padding:10px; }
+.comment.highlight { border-left:5px solid #ccc; }
+.splash { background-image:url('images/header.jpg'); height:265px; }
+input { color:#666; }
+
+img { border:0; }
+hr { color:#eee; height:1px; margin:15px auto 15px auto; width:80%; }
+li.cat-item { display:inline; }
+span.date { }
+span.labels { font-style:italic; }
 
 
 /*	home page	*/
@@ -73,17 +84,19 @@ header h1, header .menu, header .searchForm { float:left; }
 .article_wrapper h3 { font-size:20px; text-transform:none; color:#fff; }
 
 
-blockquote, .comment { background-color:#efefef; color:#666; padding:10px; }
-.comment.highlight { border-left:5px solid #ccc; }
-.splash { background-image:url('images/header.jpg'); height:265px; }
-input { color:#666; }
+/*	talks page	*/
+.page-talks article { font-family:'prociono', serif; font-size:18px; }
+.page-talks article h1 { font-size:70px; text-transform:none; }
 
 
-img { border:0; }
-hr { color:#eee; height:1px; margin:15px auto 15px auto; width:80%; }
-li.cat-item { display:inline; }
-span.date { }
-span.labels { font-style:italic; }
+/*	works page	*/
+.page-design-work article { max-width:100%; width:100%; height:130px; margin-left:230px; background-repeat:no-repeat; background-position:50% 0; margin-bottom:7px; }
+.page-design-work article .inner { background:rgba(0,0,0,0.4); height:105px; padding:25px 0 0 50px; }
+.page-design-work article a:hover .inner { background:none; }
+.page-design-work article, .page-design-work article h1, .page-design-work article a { color:#fff; }
+.page-design-work article a:hover .inner, .page-design-work article a:hover .inner h1, .page-design-work article a:hover .inner a { color:#231f20; }
+.page-design-work article a { display:block; }
+.page-design-work article a:hover { background:none; }
 
 
 /*	utility		*/

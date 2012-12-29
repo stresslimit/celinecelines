@@ -4,9 +4,6 @@
 </section>
 
 
-<footer></footer>
-
-
 <?php wp_footer() ?>
 
 <script type="text/javascript">

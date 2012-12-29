@@ -9,33 +9,36 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url') ?>">
 <?php wp_head() ?>
 </head>
-<body>
+
+<body <?php body_class() ?>>
 
 <header>
-	<div class="contain clearfix">
+	<div class="clearfix">
 
-	<h1><a id="headerh1" href="/">Celine Celines</a></h1>
+		<h1><a id="headerh1" href="<?php echo home_url(); ?>">Celine Celines</a></h1>
 
-	<?php wp_nav_menu( 'Main Menu' ) ?>
+		<?php wp_nav_menu( 'Main Menu' ) ?>
 
-	<!-- <form id="searchForm" method="get" action="">
-		<div><input type="text" name="s" placeholder="search celinecelines"></div>
-	</form> -->
+		<!-- <form id="searchForm" method="get" action="">
+			<div><input type="text" name="s" placeholder="search celinecelines"></div>
+		</form> -->
 
 	</div>
 </header>
 
-<section class="body contain">
+<section class="body">
+	<div>
 
-	<div id="whois">
-		<h3>Who is celinecelines?</h3>
-		<div>
-			<p><em>we are many.</em></p>
-			<p>celinecelines is a design studio run by Céline Semaan Vernon. Céline also runs <a href="http://slowfactory.com">slowfactory.com</a> and is associated with <a href="http://noweapon.org">noweapon.org</a>.</p>
-			<p><a href="<?php echo site_url( 'about' ); ?>">Read more about us.</a></p>
-			<p><a href="<?php echo site_url( 'work' ); ?>">Work with us.</a></p>
+		<div id="whois">
+			<h3>Who is celinecelines?</h3>
+			<div>
+				<p><em>we are many.</em></p>
+				<p>celinecelines is a design studio run by Céline Semaan Vernon. Céline also runs <a href="http://slowfactory.com">slowfactory.com</a> and is associated with <a href="http://noweapon.org">noweapon.org</a>.</p>
+				<p><a href="<?php echo site_url( 'about' ); ?>">Read more about us.</a></p>
+				<p><a href="<?php echo site_url( 'work' ); ?>">Work with us.</a></p>
+			</div>
 		</div>
+
 	</div>
-	
-	<div class="main">
+</section>
 
