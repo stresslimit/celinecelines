@@ -23,12 +23,15 @@
 	<?php if ( is_single() ) : ?>
 	
 	<section><div class="contain">
+		<article>
 		<?php comments_template(); ?>
+		</article>
 	</div></section>
 
 
-	<section class="plain">
+	<section class="posts_navigation clearfix">
 	<div>
+		<article>
 		<?php
 		$date_format = get_option( 'date_format' );
 		$prev = get_previous_post(); if ( !empty( $prev ) ) : ?>
@@ -38,18 +41,26 @@
 		</div>
 		<?php endif; ?>
 		<?php $next = get_next_post(); if ( !empty( $next ) ) : ?>
-		<div class="alignleft">
+		<div class="alignright">
 			<h2><a href="<?php echo get_permalink( $next->ID ); ?>"><?php echo get_the_title( $next ); ?></a></h2>
 			<h5>by <?php the_author() ?> on <?php echo date( $date_format, strtotime( $next->post_date ) ); ?></h5>
 		</div>
 		<?php endif; ?>
+		</article>
 	</div>
 	</section>
 	
+	<?php else : ?>
+
+	<section class="posts_navigation">
+	<div>
+		<article>
+		<?php next_posts_link('&larr;') ?> &nbsp; &nbsp; <?php previous_posts_link('&rarr;') ?>
+		</article>
+	</div>
+	</section>
+
 	<?php endif; ?>
 
-	<div class="posts_navigation">
-		<?php next_posts_link('&larr;') ?> &nbsp; &nbsp; <?php previous_posts_link('&rarr;') ?>
-	</div>
 
 <?php get_footer();

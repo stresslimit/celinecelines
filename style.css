@@ -20,7 +20,7 @@ ol, ul { list-style:none; }
 
 /* typography */
 body { font-family:'OsloRegular', arial, sans-serif; font-size:16px; line-height:1.8; color:#231f20; }
-h1, h2, h3, h4, .menu { font-family:'prociono', serif; text-transform:uppercase; line-height:1.2; padding-bottom:10px; }
+h1, h2, h3, h4, .menu { font-family:'prociono', serif; text-transform:uppercase; line-height:1.2; padding-bottom:5px; }
 h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, .menu a { color:#231f20; }
 .menu a:hover { color:#f77a6a; }
 h1 { font-size:18px }
@@ -68,6 +68,7 @@ header div { position:relative; }
 
 
 /* content */
+article { padding-bottom:20px; }
 article p img { max-width:600px !important; height:auto !important; }
 article p img.small, .main p img.original { width:auto !important; height:auto !important; }
 article ul { padding-bottom:0.5em; }
@@ -84,6 +85,9 @@ hr { color:#eee; height:1px; margin:15px auto 15px auto; width:80%; }
 li.cat-item { display:inline; }
 span.date { }
 span.labels { font-style:italic; }
+
+section.posts_navigation { border:none; background:#e4dedd; margin:0; padding:20px 0 0 0; position:relative; top:-20px; }
+.posts_navigation .alignleft, .posts_navigation .alignright { width:46%; }
 
 
 /*	home page	*/
