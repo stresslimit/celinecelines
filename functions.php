@@ -29,17 +29,31 @@ function sld_init() {
 		// stylesheets
 		wp_enqueue_style( 'style', get_bloginfo('stylesheet_url') );
 
+		add_filter( 'pre_get_posts', 'cc_pre' );
 	}
 }
 
+
+// hr to make big orange line
 add_filter( 'mce_buttons_2', 'cc_buttons' );
 function cc_buttons( $buttons ) {
 	$buttons[] = 'hr';
 	return $buttons;
 }
-
 add_filter( 'the_content', 'cc_hr' );
 function cc_hr( $the_content ) {
 	$the_content = preg_replace( '|<hr />|', '</article></div></section><section><div><article>', $the_content );
 	return $the_content;
 }
+
+
+function cc_pre( $q ) {
+	if ( !is_main_query() ) return;
+
+	// make search show all results
+	if ( is_search() ) {
+		$q->set( 'posts_per_page', -1 );
+	}
+}
+
+
