@@ -20,6 +20,14 @@
 
 	<?php endwhile; ?>
 
+	<?php if ( is_single() ) : ?>
+	
+	<section><div class="contain">
+		<?php comments_template(); ?>
+	</div></section>
+	
+	<?php endif; ?>
+
 	<div class="posts_navigation">
 		<?php next_posts_link('◀') ?> &nbsp; &nbsp; <?php previous_posts_link('▶') ?>
 	</div>

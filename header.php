@@ -19,9 +19,9 @@
 
 		<?php wp_nav_menu( 'Main Menu' ) ?>
 
-		<!-- <form id="searchForm" method="get" action="">
-			<div><input type="text" name="s" placeholder="search celinecelines"></div>
-		</form> -->
+		<form id="searchForm" method="get" action="/">
+			<input type="text" name="s" placeholder="Search Celinecelines"<?php if ( !empty( $_GET['s'] ) ) : ?> value="<?php echo $_GET['s']; ?>"<?php endif; ?>>
+		</form>
 
 	</div>
 </header>

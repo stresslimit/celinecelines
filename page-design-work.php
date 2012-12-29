@@ -15,7 +15,7 @@
 	?>
 
 	<div class="contain">
-		<article style="background-image:url(<?php sld_post_thumbnail_src( $post->ID, 'work-banner' ) ?>);">
+		<article class="work" style="background-image:url(<?php sld_post_thumbnail_src( $post->ID, 'work-banner' ) ?>);">
 			<?php if ( !empty($link) ) : ?><a href="<?php echo $link; ?>"><?php endif; ?>
 			<div class="inner">
 
@@ -29,10 +29,16 @@
 
 	<?php endforeach; ?>
 
-	<?php
-	while (have_posts()) : the_post();
-		the_content();
-	endwhile;
-	?>
+	<?php while (have_posts()) : the_post(); ?>
+
+	<section><div>
+
+		<article>
+		<?php the_content() ?>
+		</article>
+
+	</div></section>
+
+	<?php endwhile; ?>
 
 <?php get_footer();

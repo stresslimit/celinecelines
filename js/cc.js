@@ -1,8 +1,4 @@
 
-/*
-* Start Cooking javascript, rebuilt in 2012 for WordPress
-*/
-
 var $ = jQuery;
 
 jQuery(function(){
