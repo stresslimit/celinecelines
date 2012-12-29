@@ -32,3 +32,14 @@ function sld_init() {
 	}
 }
 
+add_filter( 'mce_buttons_2', 'cc_buttons' );
+function cc_buttons( $buttons ) {
+	$buttons[] = 'hr';
+	return $buttons;
+}
+
+add_filter( 'the_content', 'cc_hr' );
+function cc_hr( $the_content ) {
+	$the_content = preg_replace( '|<hr />|', '</article></div></section><section><div><article>', $the_content );
+	return $the_content;
+}
