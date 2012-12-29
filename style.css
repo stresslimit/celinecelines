@@ -92,7 +92,7 @@ section.posts_navigation { border:none; background:#e4dedd; margin:0; padding:20
 
 /*	home page	*/
 .article_wrapper { height:620px; background-repeat:repeat-x; background-position:50% 0; }
-.article_wrapper h1 { font-size:120px; text-transform:none; }
+.article_wrapper h1 { font-size:120px; text-transform:none; padding-top:1px; }
 .article_wrapper h1 a { color:#fff; }
 .article_wrapper h3 { font-size:20px; text-transform:none; color:#fff; }
 
