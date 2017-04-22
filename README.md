@@ -22,5 +22,4 @@ This could be better, but works for now.
 
 ### Deploy
 
-- `yarn run deploy-stage`
-- `yarn run deploy-production`
+- `yarn run deploy`

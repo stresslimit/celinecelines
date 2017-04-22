@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "celinecelines-ee294",
-    "production": "celinecelines-ee294"
+    "default": "celinecelines-ee294"
   }
 }

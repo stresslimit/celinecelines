@@ -7,10 +7,8 @@
     "dev-webpack": "yarn run copy-assets && webpack --watch",
     "copy-assets": "rm -rf assets && rsync _assets/ assets/ -av",
     "dist": "yarn run copy-assets && webpack && jekyll build",
-    "deploy-stage": "yarn run dist && yarn run sync-stage",
-    "deploy-production": "yarn run dist && yarn run sync-production",
-    "sync-stage": "firebase use stage && firebase deploy",
-    "sync-production": "firebase deploy -P production"
+    "deploy": "yarn run dist && yarn run sync-production",
+    "sync-production": "firebase deploy"
   },
   "author": "@stresslimit",
   "license": "ISC",
