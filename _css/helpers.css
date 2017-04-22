@@ -1,0 +1,14 @@
+
+img {
+  max-width: 100%;
+}
+.center {
+  text-align: center;
+}
+.block {
+  display: block;
+}
+.vspace {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

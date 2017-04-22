@@ -1,0 +1,15 @@
+# Build settings
+exclude: [
+  README.md,
+  firebase.json,
+  Gemfile,
+  Gemfile.lock,
+  node_modules,
+  package.json,
+  postcss.config.js,
+  webpack.config.babel.js,
+  yarn.lock
+]
+permalink: /:title/
+gems:
+- jekyll-haml
