@@ -11,5 +11,5 @@ exclude: [
   yarn.lock
 ]
 permalink: /:title/
-gems:
-- jekyll-haml
+# gems:
+# - jekyll-haml
