@@ -2,6 +2,12 @@
 html, body {
   height: 100%;
 }
+
+.clients-icon img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
 .row {
   min-height: 100%;
 }
@@ -11,7 +17,7 @@ html, body {
 .right {
   height: 100%;
   width: 100%;
-  background: url('/assets/images/Celine-DrielyS-000096670035.jpg') top right no-repeat;
+  background: url('/assets/images/celine-for-coveteur.jpg') 50% 100% no-repeat;
   background-size: cover;
 }
 @media (--viewport-sm-only) {

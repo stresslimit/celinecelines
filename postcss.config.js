@@ -5,8 +5,10 @@ module.exports = {
     },
     'postcss-import': {},
     'postcss-custom-properties': {},
-    'postcss-nested': {},
     'postcss-custom-media': {},
-    // 'csswring': {},
+    'postcss-calc': {},
+    'postcss-extend': {},
+    'postcss-nested': {},
+    'csswring': {},
   },
 }
