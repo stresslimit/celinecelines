@@ -1,18 +1,33 @@
-# Build settings
-include: [
-  _pages
-]
-exclude: [
-  README.md,
-  firebase.json,
-  Gemfile,
-  Gemfile.lock,
-  node_modules,
-  package.json,
-  postcss.config.js,
-  webpack.config.babel.js,
-  yarn.lock
-]
-permalink: /:title/
-# gems:
-# - jekyll-haml
+---
+title: Slow Factory
+timezone: America/New_York
+permalink: pretty
+collections:
+  pages:
+    title: Pages
+    output: true
+    permalink: "/:path"
+include:
+- _pages
+exclude:
+- _js
+- _css
+- _assets
+- deprecated
+- README.md
+- firebase.json
+- gemfiles/
+- Gemfile
+- Gemfile.lock
+- node_modules/
+- package.json
+- postcss.config.js
+- webpack.config.js
+- webpack.config.babel.js
+- vendor/
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+- yarn-error.log
+- yarn.lock

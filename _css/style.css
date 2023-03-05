@@ -1,0 +1,41 @@
+
+.b-t {
+  border-top: 2px solid var(--text-color);
+}
+.b-b {
+  border-bottom: 2px solid var(--text-color);
+}
+@media (--viewport-md) {
+  .b-r {
+    border-right: 2px solid var(--text-color);
+  }
+  .b-l {
+    border-left: 2px solid var(--text-color);
+  }
+}
+
+.p-t {
+  padding-top: var(--unit);
+}
+.p-r {
+  padding-right: var(--unit);
+}
+.p-b {
+  padding-bottom: var(--unit);
+}
+.p-l {
+  padding-left: var(--unit);
+}
+
+
+.splide__pagination__page {
+  width: 1.2em;
+  height: 1.2em;
+}
+.splide__pagination {
+  counter-reset: pagination-num;
+}
+.splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter( pagination-num );
+}

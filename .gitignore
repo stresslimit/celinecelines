@@ -1,6 +1,13 @@
-.jekyll-metadata
 .DS_Store
-assets/css/*.js
+.ruby-version
+.jekyll-cache*
+.jekyll-cache/*
+.firebase*
+.firebase/*
 node_modules
-out.js
-*.map
+yarn.lock
+Gemfile.lock
+vendor
+_site
+docs
+yarn-error.log

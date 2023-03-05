@@ -1,18 +1,222 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("/assets/fonts/HelveticaNeueLight.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("/assets/fonts/HelveticaNeueLightItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("/assets/fonts/HelveticaNeuBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
 
 body {
-  font-family: 'Scala', sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 18px;
-  background: white;
   color: var(--text-color);
+  background: #c6bfbc;
+  line-height: 1.1;
+}
+@media (--viewport-xs-only) {
+  body {
+    font-size: 15px;
+  }
+}
+p {
+  margin: 0 0 .8em;
+  line-height: 1.4em;
+}
+li {
+  line-height: 1.4em;
+  margin: 0 0 .8em;
+}
+ul.tight li {
+  margin-bottom: 0;
+}
+ul.bulletless {
+  padding-left: 0;
+  list-style: none;
+}
+.b {
+  font-weight: bold;
+}
+.q {
+  font-weight: bold;
+}
+.a {
+  font-size: 1.1em;
 }
 
 a {
-  color: var(--link-color);
+  color: var(--text-color);
 }
-b, strong {
-  font-weight: bold;
+a,
+nav a:hover,
+nav .active a,
+.button:hover,
+.btn:hover,
+.img-link:hover,
+.superlink:hover {
+  text-decoration: underline;
 }
-p {
-  margin: 0.2em 0 0.8em 0;
-  line-height: 1.4;
+nav a,
+a:hover,
+.button,
+.btn,
+.img-link,
+.superlink {
+  text-decoration: none;
+}
+
+
+.text-xl {
+  font-size: 2em;
+}
+.text-lg {
+  font-size: 1.5em;
+}
+.text-md {
+  font-size: 1.2em;
+}
+.text-sm {
+  font-size: .9em;
+  line-height: 1.2;
+}
+
+.color-tile {
+  width: 6em;
+  height: 6em;
+  display: inline-block;
+  margin: 0 1em 1em 0;
+}
+
+
+/* Titles
+*/
+
+.title-xxl,
+.title-xl,
+.title-lg,
+.title-md-lg,
+.title-md,
+.title-sm,
+.title-xs,
+.title-card,
+.richtext-formatted h1,
+.richtext-formatted h2,
+.richtext-formatted h3,
+.richtext-formatted h4,
+.richtext-formatted h5 {
+  font-weight: 600;
+  line-height: 1.1;
+}
+.title-alt-xxl,
+.title-alt-xl,
+.title-alt-lg,
+.title-alt-md-lg,
+.title-alt-md,
+.title-alt-sm,
+.title-alt-xs {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.richtext-formatted h1,
+.richtext-formatted h2,
+.richtext-formatted h3,
+.richtext-formatted h4,
+.richtext-formatted h5 {
+  margin-top: .75em;
+  margin-bottom: .5em;
+}
+.richtext-formatted img {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.title-xxl, .title-alt-xxl {
+  font-size: 10em;
+}
+.title-xl {
+  font-size: 6em;
+}
+p.title-xl, p.title-lg {
+  margin-bottom: 0.4em;
+}
+
+.title-lg, .title-alt-lg
+ {
+  font-size: 4em;
+  line-height: 1;
+}
+.title-md-lg, .title-alt-md-lg,
+.richtext-formatted h1 {
+  font-size: 3.5em;
+}
+.title-md, .title-alt-md,
+.richtext-formatted h2 {
+  font-size: 2.5em;
+}
+.title-sm, .title-alt-sm,
+.richtext-formatted h3 {
+  font-size: 1.5em;
+}
+.title-xs, .title-alt-xs,
+.richtext-formatted h4 {
+  font-size: 1em;
+}
+
+
+
+/* Typography small screen adjustments
+*/
+
+@media (--viewport-xs-only) {
+  .title-xxl, .title-alt-xxl {
+    font-size: 4.5em;
+  }
+  .title-xl {
+    font-size: 3em;
+  }
+  .title-lg, .title-alt-lg,
+  .richtext-formatted h1 {
+    font-size: 2.5em;
+  }
+  .title-md-lg, .title-alt-md-lg {
+    font-size: 2.1em;
+  }
+  .title-md, .title-alt-md,
+  .richtext-formatted h2 {
+    font-size: 1.8em;
+  }
+  .title-sm, .title-alt-sm,
+  .richtext-formatted h3 {
+    font-size: 1.2em;
+  }
+  .title-card {
+    font-size: 2em;
+  }
+  .text-lg {
+    font-size: 1.2em;
+  }
+  .text-md {
+    font-size: 1.1em;
+  }
+  .text-sm {
+    font-size: .9em;
+  }
+
+}
+
+.text-black-bg{
+  background:black;
 }

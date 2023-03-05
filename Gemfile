@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-group :jekyll_plugins do
-  gem 'jekyll-livereload'
-end
+gem "jekyll", "~> 4.1.0"
+gem "jekyll-redirect-from"
+gem "webrick", "~> 1.7"

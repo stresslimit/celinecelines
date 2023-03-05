@@ -1,8 +1,11 @@
 @import '_var.css';
 @import 'reset.css';
-@import 'font.css';
+
+@import "@splidejs/splide/dist/css/splide.min.css";
+
 @import 'typography.css';
-/* @import 'css-layout/index.css'; */
+@import 'colour.css';
+@import 'css-layout/index.css';
 @import 'layout.css';
 @import 'helpers.css';
-@import 'custom.css';
+@import 'style.css';

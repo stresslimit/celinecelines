@@ -1,9 +1,9 @@
 
 :root {
 
-  --text-color: #666;
+  --text-color: #333;
   --link-color: #100aac;
 
-  --unit: 10px;
+  --unit: 2rem;
 
 }
