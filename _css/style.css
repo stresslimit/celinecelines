@@ -1,4 +1,8 @@
 
+body {
+  background: var(--offwhite);
+}
+
 .b-t {
   border-top: 2px solid var(--text-color);
 }
