@@ -3,6 +3,30 @@ body {
   background: var(--offwhite);
 }
 
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border: 2px solid black;
+  border-radius: .5em;
+  text-decoration: none;
+  transition: all .2s ease-out;
+  width: max-content;
+
+}
+
+.btn:hover, .button:hover {
+  text-decoration: none;
+  background-color: var(--white);
+}
+.action-link::before {
+  content: "→";
+  width: 1.5em;
+  height: 1em;
+  display: inline-block;
+}
+
 .b-t {
   border-top: 2px solid var(--text-color);
 }

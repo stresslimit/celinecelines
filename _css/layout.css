@@ -18,7 +18,7 @@
   margin: auto;
 }
 
-.section {
+.section, section {
   padding: 4em 0;
 }
 

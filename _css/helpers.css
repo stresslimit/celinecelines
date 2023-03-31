@@ -12,3 +12,6 @@ img {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+.align-right {
+  text-align: right;
+}
