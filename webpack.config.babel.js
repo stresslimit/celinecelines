@@ -29,7 +29,7 @@ let config = {
       filename: '[name].css'
     }),
     function() {
-      this.plugin('done', stats => {
+      this.hooks.done.tap('done', stats => {
         fs.writeFileSync(path.join(__dirname, '_data', 'webpack.yml'),
           'hash: "'+ stats.hash +'"')
         console.log("\r\n\r\n+++ writing to webpack.yml +++\r\n\r\n")
