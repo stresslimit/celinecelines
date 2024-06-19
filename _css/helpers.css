@@ -12,6 +12,9 @@ img {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+.align-left {
+  text-align: left;
+}
 .align-right {
   text-align: right;
 }
